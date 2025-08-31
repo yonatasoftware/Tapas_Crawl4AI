@@ -49,7 +49,7 @@ async def main():
         if result.success and result.extracted_content:
             print("\n📌 Extracted Job Postings:\n")
             data = result.extracted_content
-            jobs = data.get("jobs", data)  # supports dict or list
+            jobs = data.get("jobs", data)  # supports dict or listcd 
             for job in jobs:
                 print(f"- {job['title']} @ {job['company']} ({job['location']})")
         else:
