@@ -50,8 +50,6 @@ async def main():
             print("\n📌 Extracted Job Postings:\n")
             data = result.extracted_content
             jobs = data.get("jobs", data)  # supports dict or list
-            print(f"Total jobs found: {len(jobs)}")
-
             for job in jobs:
                 print(f"- {job['title']} @ {job['company']} ({job['location']})")
         else:
