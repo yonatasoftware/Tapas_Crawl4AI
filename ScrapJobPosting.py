@@ -24,7 +24,7 @@ async def main():
 
     # ✅ Create extraction strategy
     strategy = LLMExtractionStrategy(
-        #schema=JobPostingsSchema.model_json_schema(),
+        schema=JobPostingsSchema.model_json_schema(),
         llm_config=llm_cfg
     )
 
